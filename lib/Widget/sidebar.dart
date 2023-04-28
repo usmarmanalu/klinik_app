@@ -4,7 +4,8 @@ import 'package:klinik_app/UI/UI_Poli/poli_page.dart';
 import '../UI/UI_Pasien/pasien_page.dart';
 import '../UI/UI_Pegawai/pegawai_page.dart';
 import '../beranda.dart';
-import '../login.dart';
+import '../choice_login.dart';
+import '../login_pegawai.dart';
 
 class Sidebar extends StatelessWidget {
   const Sidebar({super.key});
@@ -106,11 +107,11 @@ class Sidebar extends StatelessWidget {
               color: Colors.black,
             ),
             title: Text("Keluar"),
-            onTap: () {
+            onTap: () {         
               Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Login(),
+                  builder: (context) => LoginChoice(),
                 ),
                 (Route<dynamic> route) => false,
               );

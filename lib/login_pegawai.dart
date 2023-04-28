@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:klinik_app/beranda.dart';
+import 'package:klinik_app/buat_akun.dart';
+import 'package:klinik_app/choice_login.dart';
+import 'package:klinik_app/lupa_password.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -18,9 +21,9 @@ class _LoginState extends State<Login> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Container(
-            height: MediaQuery.of(context).size.height,
+            // height: MediaQuery.of(context).size.height,
             child: Container(
-              padding: EdgeInsets.all(15.0),
+              padding: EdgeInsets.only(top: 100.0),
               child: Column(
                 children: <Widget>[
                   Text(
@@ -45,7 +48,11 @@ class _LoginState extends State<Login> {
                             SizedBox(
                               height: 40,
                             ),
-                            _tombolLogin()
+                            _tombolLogin(),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            _lupaPassword(),
                           ],
                         ),
                       ),
@@ -77,7 +84,8 @@ class _LoginState extends State<Login> {
   }
 
   Widget _passwordTextField() {
-    return TextFormField(
+    return TextField(
+      obscureText: true,
       decoration: InputDecoration(labelText: "Password"),
       controller: _passwordCtrl,
       keyboardType: TextInputType.text,
@@ -113,6 +121,65 @@ class _LoginState extends State<Login> {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  _lupaPassword() {
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => BuatAkun(),
+                      ));
+                },
+                child: Text(
+                  "Buat Akun",
+                  style: TextStyle(color: Colors.green),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LupaPassword(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Lupa Password?",
+                  style: TextStyle(color: Colors.red),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 80.0,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => LoginChoice(),
+                ),
+              );
+            },
+            child: Icon(
+              Icons.logout,
+              color: Colors.red,
+            ),
+          ),
+        ],
       ),
     );
   }

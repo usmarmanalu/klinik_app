@@ -52,6 +52,7 @@ class _PegawaiUpdateFormState extends State<PegawaiUpdateForm> {
                 _fieldtglLahirPegawai(),
                 _fieldNoTelephonePegawai(),
                 _fieldEmailPegawai(),
+                // _fieldPasswordPegawai(),
                 SizedBox(
                   height: 20,
                 ),
@@ -120,15 +121,14 @@ class _PegawaiUpdateFormState extends State<PegawaiUpdateForm> {
     );
   }
 
-  _fieldPasswordPegawai() {
-    return TextFormField(
-      decoration: InputDecoration(labelText: "Password Pegawai"),
-      controller: _passwordCtrl,
-      maxLines: null,
-      autofocus: true,
-      keyboardType: TextInputType.text,
-    );
-  }
+  // _fieldPasswordPegawai() {
+  //   return TextField(
+  //     decoration: InputDecoration(labelText: "Password Pegawai"),
+  //     obscureText: true,
+  //     controller: _passwordCtrl,
+  //     keyboardType: TextInputType.text,
+  //   );
+  // }
 
   _tombolSimpan() {
     return ElevatedButton(

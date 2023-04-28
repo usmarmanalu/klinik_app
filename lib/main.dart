@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:klinik_app/login.dart';
+import 'package:klinik_app/choice_login.dart';
+import 'package:klinik_app/login_pegawai.dart';
 
 import 'UI/UI_Poli/poli_page.dart';
 import 'beranda.dart';
+import 'buat_akun.dart';
+import 'lupa_password.dart';
 
 void main() => runApp(KlinikApp());
 
@@ -14,7 +17,7 @@ class KlinikApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Klinik App",
-      home: Login(),
+      home: LoginChoice(),
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: Colors.blue,

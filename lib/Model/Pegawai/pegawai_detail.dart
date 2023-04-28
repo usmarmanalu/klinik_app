@@ -1,3 +1,7 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
+
 class PegawaiDetailList {
   String tanggal_lahir_pegawai,
       nomor_telephone_pegawai,
