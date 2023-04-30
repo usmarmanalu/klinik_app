@@ -36,6 +36,8 @@ class _DetailPegawaiState extends State<DetailPegawai> {
                 child: Column(
                   children: <Widget>[
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.edit_document,
                         color: Colors.teal,
@@ -44,6 +46,8 @@ class _DetailPegawaiState extends State<DetailPegawai> {
                       trailing: Text("${widget.pegawai.nip}"),
                     ),
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.person_outline,
                         color: Colors.blue,
@@ -52,6 +56,8 @@ class _DetailPegawaiState extends State<DetailPegawai> {
                       trailing: Text("${widget.pegawai.nama_pegawai}"),
                     ),
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.date_range,
                         color: Colors.grey,
@@ -60,6 +66,8 @@ class _DetailPegawaiState extends State<DetailPegawai> {
                       trailing: Text("${tanggal_lahir_pegawai}"),
                     ),
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.phone,
                         color: Colors.green,
@@ -68,6 +76,8 @@ class _DetailPegawaiState extends State<DetailPegawai> {
                       trailing: Text("${nomor_telephone_pegawai}"),
                     ),
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.email,
                         color: Colors.brown,
@@ -75,16 +85,24 @@ class _DetailPegawaiState extends State<DetailPegawai> {
                       title: Text("email :"),
                       trailing: Text(
                         " ${email_pegawai}",
-                        style: TextStyle(fontSize: 13.0),
+                        style: TextStyle(
+                          fontSize: 13.5,
+                        ),
                       ),
                     ),
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.password,
                         color: Colors.black,
                       ),
                       title: Text("password :"),
-                      trailing: Text(" ${password_pegawai}"),
+                      trailing: Text(
+                        " ${password_pegawai}",
+                        style:
+                            TextStyle(decoration: TextDecoration.lineThrough),
+                      ),
                     ),
                   ],
                 ),

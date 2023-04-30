@@ -19,6 +19,8 @@ class PasienItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             ListTile(
+              minLeadingWidth: 6,
+              horizontalTitleGap: 9,
               title: Text("no. rm :"),
               leading: Icon(
                 Icons.edit_document,
@@ -27,6 +29,8 @@ class PasienItem extends StatelessWidget {
               trailing: Text("${pasien.nomor_rm}"),
             ),
             ListTile(
+              minLeadingWidth: 6,
+              horizontalTitleGap: 9,
               leading: Icon(
                 Icons.person_rounded,
                 color: Colors.teal[900],

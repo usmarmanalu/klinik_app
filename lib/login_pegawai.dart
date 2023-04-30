@@ -28,7 +28,7 @@ class _LoginState extends State<Login> {
                 children: <Widget>[
                   Text(
                     "Login Admint",
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
                     height: 50,

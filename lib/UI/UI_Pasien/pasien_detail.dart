@@ -35,6 +35,8 @@ class _DetailPasienState extends State<DetailPasien> {
                 child: Column(
                   children: <Widget>[
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.edit_document,
                         color: Colors.teal,
@@ -43,6 +45,8 @@ class _DetailPasienState extends State<DetailPasien> {
                       trailing: Text("${widget.pasien.nomor_rm}"),
                     ),
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.person_outline,
                         color: Colors.blue,
@@ -51,6 +55,8 @@ class _DetailPasienState extends State<DetailPasien> {
                       trailing: Text("${widget.pasien.nama}"),
                     ),
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.date_range,
                         color: Colors.redAccent,
@@ -59,6 +65,8 @@ class _DetailPasienState extends State<DetailPasien> {
                       trailing: Text("${tanggal_lahir}"),
                     ),
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.phone,
                         color: Colors.green,
@@ -67,11 +75,16 @@ class _DetailPasienState extends State<DetailPasien> {
                       trailing: Text("${nomor_telephone}"),
                     ),
                     ListTile(
+                      minLeadingWidth: 6,
+                      horizontalTitleGap: 9,
                       leading: Icon(
                         Icons.location_city,
                         color: Colors.yellow,
                       ),
-                      title: Text("alamat :"),
+                      title: Text(
+                        "alamat :",
+                        maxLines: 1,
+                      ),
                       trailing: Text(
                         " ${alamat}",
                         style: TextStyle(fontSize: 12),

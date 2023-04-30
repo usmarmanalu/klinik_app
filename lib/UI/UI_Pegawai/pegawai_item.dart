@@ -19,6 +19,8 @@ class PegawaiItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             ListTile(
+              minLeadingWidth: 6,
+              horizontalTitleGap: 9,
               leading: Icon(
                 Icons.edit_document,
                 color: Colors.deepOrange[300],
@@ -29,6 +31,8 @@ class PegawaiItem extends StatelessWidget {
               trailing: Text("${pegawai.nip}"),
             ),
             ListTile(
+              minLeadingWidth: 6,
+              horizontalTitleGap: 9,
               leading: Icon(
                 Icons.person,
                 color: Colors.blueGrey[600],

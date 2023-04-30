@@ -19,6 +19,7 @@ class KlinikApp extends StatelessWidget {
       title: "Klinik App",
       home: LoginChoice(),
       theme: ThemeData(
+        fontFamily: 'Spinnaker',
         brightness: Brightness.light,
         primaryColor: Colors.blue,
         colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.teal),
