@@ -21,7 +21,7 @@ class Beranda extends StatelessWidget {
               scale: 10.0,
               opacity: 20.0,
               fit: BoxFit.fill,
-              image: AssetImage('assets/bannerklinik.jpg'),
+              image: AssetImage('assets/images/bannerklinik.jpg'),
             ),
           ),
           height: 350.0,
